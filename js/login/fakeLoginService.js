@@ -1,17 +1,3 @@
-users = [
-    {
-        first_name: "Robin W.",
-        last_name: "Foster",
-        email: "robin.foster@stud.uni-hannover.de",
-        password: "ABC123"
-    },
-    {
-        first_name: "Max",
-        last_name: "Mustermann",
-        email: "muster@r-foster.de",
-        password: "ABC123"
-    }
-];
 
 /**
  * Fake Login Service
