@@ -23,6 +23,11 @@ function answerTwo(){
     document.getElementById('chat').innerHTML += "<div class=\"container left\"><div class=\"content\"><p><i>Peter</i><br></p><p>Danke für die Datei, ich gucke eben mal rein.</p></div></div>";
 }
 
+function leaveChat(){
+    var result = prompt("Waren Sie zufrieden mit Ihrem Tutor? Vergeben Sie bitte eine Schulnote (1-6)");
+    window.location.replace("menu.html");
+}
+
 function imageMic(){
     if(stateMic){
         document.getElementById('micImg').src = "../images/microphone-black-shape-disabled.png";
