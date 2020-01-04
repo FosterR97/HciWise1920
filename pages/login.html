@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Tutor System</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/login/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/login/main.js"></script>
+    <script src="../js/login/fakeLoginService.js"></script>
+</head>
+<body>
+    <div class="spacer">
+        <p align="center"><img class="logobig" src="../images/logo_big.png" /></p>
+    </div>
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="logincontainer col-lg-4 col-sm-12">
+            <h3 align="center" style="padding-bottom: 10px; ">Login</h3>
+            <div>
+                <form action="#" onsubmit="return login(event)">
+                    <p style="color: red" id="errormsg"></p>
+                    <label>
+                        <span style="display: inline-block; width: 100px;">Username:</span>
+                        <input type="text" id="username" name="username" />
+                    </label>
+                    <br/>
+                    <label>
+                        <span style="display: inline-block; width: 100px;">Password:</span>
+                        <input type="password" id="password" name="password" />
+                    </label>
+                    <br/>
+                    <label>
+                        <span style="display: inline-block; width: 100px;"></span>
+                        <input type="submit" value="Login" />
+                    </label>
+
+                </form>
+            </div>
+
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+    <div class="footer">&copy; Group 19 HCI</div>
+
+</body>
+</html>
