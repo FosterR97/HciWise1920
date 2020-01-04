@@ -7,6 +7,12 @@
     border-bottom: 1px solid #1E1E1E;
 }
 
-@media(max-width: 578px){
-    
+.devider{
+    border-right: 1px solid #ccc;
+}
+
+@media(max-width: 990px){
+    .devider{
+        border-right: 0;
+    }
 }
