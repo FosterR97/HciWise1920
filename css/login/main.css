@@ -2,7 +2,7 @@
     background: #E1E1E1;
     height: 300px;
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     border: 1px solid #000;
     max-width: 500px;
     margin: auto;
@@ -18,9 +18,7 @@
 .spacer{
 
 }
-body{
-    max-width: 98%;
-}
+
 label{
     width: 100%;
 }
@@ -40,7 +38,6 @@ input{
         min-height: 70%;
         border: 0;
         border-radius: 0;
-        max-width: 80%;
     }
     body{
         max-width: 100%;
