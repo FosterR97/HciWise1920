@@ -1,0 +1,8 @@
+.waiting{
+    width: 40%;
+    min-height: 20%;
+    max-width: 500px;
+    border: 1px solid #000;
+    margin: auto;
+    margin-top: 2%;
+}

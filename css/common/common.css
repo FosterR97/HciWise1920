@@ -10,6 +10,9 @@
 .devider{
     border-right: 1px solid #ccc;
 }
+.logobig{
+    max-width: 40%;
+}
 
 @media(max-width: 990px){
     .devider{
