@@ -40,10 +40,10 @@
             <br />
             <div class="row">
                 <div class="col-lg-6">
-                    <p align="center"><img src="../images/microphone-black-shape.png" class="icons"/></p>
+                    <p align="center"><img src="../images/microphone-black-shape-disabled.png" class="icons" id="micImg" onclick="imageMic()"/></p>
                 </div>
                 <div class="col-lg-6">
-                    <p align="center"><img src="../images/share.png" class="icons"/></p>
+                    <p align="center"><img src="../images/share-disabled.png" class="icons" id="shareImg" onclick="imageShare()"/></p>
                 </div>
             </div>
         </div>
@@ -63,10 +63,10 @@
             <textarea id="chatbox" style="width: 100%;" placeholder="Tippe drauf los..."></textarea>
             <br />
             <br/>
-            <button class="btn btn-info" onclick="sendChatMessage()">Senden</button>
+            <p><button class="btn btn-info" onclick="sendChatMessage()">Senden</button><span style="float: right"><input type="file" id="file"><button class="btn btn-info" onclick="sendFile()">Datei hochladen</button></span></p>
         </div>
     </div>
     <br />
-    <p align="center">Icons made by <a href="https://www.flaticon.com/authors/catkuro" title="catkuro">catkuro</a> and <a href="https://www.flaticon.com/authors/dave-gandy" title="dave gandy">dave gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>&copy; HCI Group 19</p>
+    <p align="center">Icons made by <a href="https://www.flaticon.com/authors/catkuro" title="catkuro">catkuro</a>, <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> and <a href="https://www.flaticon.com/authors/dave-gandy" title="dave gandy">dave gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>&copy; HCI Group 19</p>
 </body>
 </html>
