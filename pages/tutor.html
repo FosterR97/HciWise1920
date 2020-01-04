@@ -6,11 +6,12 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/common/common.css" rel="stylesheet">
     <link href="../css/tutor/main.css" rel="stylesheet">
+    <link href="../css/tutor/chat.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/tutor/main.js"></script>
 </head>
-<body>
+<body onload="alert('Du befindest dich nun im Live-Chat mit deinem Tutor')">
     <div class="header">
         <img src="../images/logo_big.png" style="max-height: 55px;" />
         <span style="float: right; padding-right: 30px; padding-top: 12px"><a href="menu.html" style="padding-right:20px">Profile</a><a href="login.html">Logout</a></span>
@@ -48,9 +49,24 @@
         </div>
         <div class="col-lg-9 col-sm-12">
             <br />
-            Chat
+            <div class="timeline" id="chat">
+            <div class="container left">
+                <div class="content">
+                    <p><i>Peter</i><br></p>
+                    <p>Moin, wie kann ich dir helfen?</p>
+                </div>
+            </div>
+
+        </div>
+            <br />
+            <br />
+            <textarea id="chatbox" style="width: 100%;" placeholder="Tippe drauf los..."></textarea>
+            <br />
+            <br/>
+            <button class="btn btn-info" onclick="sendChatMessage()">Senden</button>
         </div>
     </div>
-    <p>Icons made by <a href="https://www.flaticon.com/authors/catkuro" title="catkuro">catkuro</a> and <a href="https://www.flaticon.com/authors/dave-gandy" title="dave gandy">dave gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+    <br />
+    <p align="center">Icons made by <a href="https://www.flaticon.com/authors/catkuro" title="catkuro">catkuro</a> and <a href="https://www.flaticon.com/authors/dave-gandy" title="dave gandy">dave gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>&copy; HCI Group 19</p>
 </body>
 </html>
