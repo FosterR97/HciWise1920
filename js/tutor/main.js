@@ -13,14 +13,35 @@ function sendFile(){
     let files = document.getElementById("file").files;
     document.getElementById('chat').innerHTML += "<div class=\"container right\"><div class=\"content\"><p><i>Max</i><br></p><p><img src='../images/file.png' />"+ files[0].name+"</p></div></div>";
     setTimeout(answerTwo, 4000);
+    setTimeout(answerThree, 9000);
+    setTimeout(showScreenSharing, 12000);
 }
 
 function answer(){
-    document.getElementById('chat').innerHTML += "<div class=\"container left\"><div class=\"content\"><p><i>Peter</i><br></p><p>Okay, ich schaue eben mal nach.</p></div></div>";
+    document.getElementById('chat').innerHTML += "<div class=\"container left\"><div class=\"content\"><p><i>Peter</i><br></p><p>Okay, ich schaue eben mal nach. Kannst du mir eben mal die Quellcode-Datei hochladen?</p></div></div>";
 }
 
 function answerTwo(){
     document.getElementById('chat').innerHTML += "<div class=\"container left\"><div class=\"content\"><p><i>Peter</i><br></p><p>Danke für die Datei, ich gucke eben mal rein.</p></div></div>";
+}
+
+function answerThree(){
+    document.getElementById('chat').innerHTML += "<div class=\"container left\"><div class=\"content\"><p><i>Peter</i><br></p><p>Ich gebe dir gleich mal das Screensharing frei, ich habe dir deinen Fehler markiert.</p></div></div>";
+}
+
+function showScreenSharing(){
+    alert("Screen Sharing deines Tutors wurde dir freigegeben!");
+    window.scrollTo(0,0);
+    document.getElementById('overlay').style.visibility = "visible";
+    document.getElementById('closebox').style.visibility = "visible";
+    document.getElementById('viewbox').style.visibility = "visible";
+}
+
+function closeScreenSharing(){
+    alert("Screen Sharing deines Tutors wurde von dir beendet!");
+    document.getElementById('overlay').style.visibility = "hidden";
+    document.getElementById('closebox').style.visibility = "hidden";
+    document.getElementById('viewbox').style.visibility = "hidden";
 }
 
 function leaveChat(){
