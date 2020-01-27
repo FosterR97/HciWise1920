@@ -10,10 +10,12 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/tutor/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
 </head>
-<body onload="alert('Du befindest dich nun im Live-Chat mit deinem Tutor')">
+<body onload="swalfire('Info','Du befindest dich nun im Gespräch mit deinem Tutor.', 'info', 'Okay')">
 <div id="overlay"></div>
-<a href="#" onclick="closeScreenSharing()" id="closebox">Close Screen Sharing</a>
+<a href="#" style="font-size: 200%; color: red;" onclick="closeScreenSharing()" id="closebox">Close Screen Sharing</a>
 <div id="viewbox"><p align="center"><img src="../images/tutorScreen.PNG" /></p></div>
     <div class="header">
         <img src="../images/logo_big.png" style="max-height: 55px;" />
